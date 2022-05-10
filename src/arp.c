@@ -3,6 +3,7 @@
 #include "net.h"
 #include "arp.h"
 #include "ethernet.h"
+
 /**
  * @brief 初始的arp包
  * 
@@ -59,6 +60,19 @@ void arp_print()
 void arp_req(uint8_t *target_ip)
 {
     // TO-DO
+    buf_init(&txbuf,sizeof(arp_pkt_t));
+    arp_pkt_t *hdr = (arp_pkt_t*)txbuf.data;
+    hdr->hw_type16 = swap16(1);
+    hdr->pro_type16 = swap16(NET_PROTOCOL_IP);
+    hdr->hw_len = 6;
+    hdr->pro_len = 4;
+    hdr->opcode16 = swap16(1);
+    memcpy(hdr->sender_mac,net_if_mac,6);
+    memcpy(hdr->sender_ip,net_if_ip,4);
+    memset(hdr->target_mac,0x00,6);
+    memcpy(hdr->target_ip,target_ip,4);
+    uint8_t brocast_mac[6] = {0xff,0xff,0xff,0xff,0xff,0xff};
+    ethernet_out(&txbuf,brocast_mac,NET_PROTOCOL_ARP);
 }
 
 /**
@@ -70,6 +84,19 @@ void arp_req(uint8_t *target_ip)
 void arp_resp(uint8_t *target_ip, uint8_t *target_mac)
 {
     // TO-DO
+    printf("arp resp!\n");
+    buf_init(&txbuf,sizeof(arp_pkt_t));
+    arp_pkt_t *hdr = (arp_pkt_t*)txbuf.data;
+    hdr->hw_type16 = swap16(1);
+    hdr->pro_type16 = swap16(NET_PROTOCOL_IP);
+    hdr->hw_len = 6;
+    hdr->pro_len = 4;
+    hdr->opcode16 = swap16(2);
+    memcpy(hdr->sender_mac,net_if_mac,6);
+    memcpy(hdr->sender_ip,net_if_ip,4);
+    memcpy(hdr->target_mac,target_mac,6);
+    memcpy(hdr->target_ip,target_ip,4);
+    ethernet_out(&txbuf,hdr->target_mac,NET_PROTOCOL_ARP);
 }
 
 /**
@@ -81,6 +108,20 @@ void arp_resp(uint8_t *target_ip, uint8_t *target_mac)
 void arp_in(buf_t *buf, uint8_t *src_mac)
 {
     // TO-DO
+    if(buf->len >= 8){
+        arp_pkt_t *hdr = (arp_pkt_t*)buf->data;
+        map_set(&arp_table,hdr->sender_ip,src_mac);
+        buf_t *last_buf = map_get(&arp_buf,hdr->sender_ip);
+        if(last_buf){
+            ethernet_out(last_buf,src_mac,NET_PROTOCOL_IP);
+            map_delete(&arp_buf,hdr->sender_ip);
+        }
+        else{
+            if(hdr->opcode16 == swap16(1) && memcmp(hdr->target_ip,net_if_ip,4) == 0){
+                arp_resp(hdr->sender_ip,src_mac);
+            }
+        } 
+    }   
 }
 
 /**
@@ -93,6 +134,19 @@ void arp_in(buf_t *buf, uint8_t *src_mac)
 void arp_out(buf_t *buf, uint8_t *ip)
 {
     // TO-DO
+    uint8_t *target_mac = map_get(&arp_table,ip);
+    if(target_mac != NULL){
+        ethernet_out(buf,target_mac,NET_PROTOCOL_IP);
+    }
+    else{
+        uint8_t *existed = map_get(&arp_buf,ip);
+        if(existed != NULL){
+        }
+        else{
+            map_set(&arp_buf,ip,buf);
+            arp_req(ip);
+        }
+    }
 }
 
 /**

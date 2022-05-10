@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20220509-0649-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.23.1"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="LAPTOP-LUM5723O"
+	OSRelease=" Professional"
+	OSVersion=" (Build 22616)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="15"
+	ModelID="0"
+	ProcessorCacheSize="64"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="16876"
+	TotalPhysicalMemory="14188"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3293"
+	>
+	<Testing>
+		<StartDateTime>May 09 14:49 ?D1[NON-UTF-8-BYTE-0xA8][NON-UTF-8-BYTE-0xB2][NON-UTF-8-BYTE-0xA1][NON-UTF-8-BYTE-0xC0][NON-UTF-8-BYTE-0xA8][NON-UTF-8-BYTE-0xBA][NON-UTF-8-BYTE-0xA1][NON-UTF-8-BYTE-0xC1]?[NON-UTF-8-BYTE-0xA8][NON-UTF-8-BYTE-0xBA][NON-UTF-8-BYTE-0xA1][NON-UTF-8-BYTE-0xC0]??</StartDateTime>
+		<StartTestTime>1652078997</StartTestTime>
+		<TestList>
+			<Test>./eth_in</Test>
+			<Test>./eth_out</Test>
+			<Test>./arp_test</Test>
+			<Test>./ip_test</Test>
+			<Test>./ip_frag_test</Test>
+			<Test>./icmp_test</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>eth_in</Name>
+			<Path>.</Path>
+			<FullName>./eth_in</FullName>
+			<FullCommandLine>D:\Code\net-lab-2022\build\eth_in.exe "D:/Code/net-lab-2022/testing/data/eth_in"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>5.20026</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Code\net-lab-2022\build\eth_in.exe "D:/Code/net-lab-2022/testing/data/eth_in"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyFkt1KxDAQhW9LX2FvxjsFWTr93V1REMEHUO+8Cs10G2ya0qT4+k66W1CQJHBgyHfyw+HsPrOHotQfZB1YJ2aX7i47r0RSjWdQ47Q4yDBJVuWsglWyKlbNalgH1jFJMGOxD9mH7EP2YdUJNZC8SXmuf83NNl+fTN+Fnga6PimGAabZtGQtyXtoe2q//IfM4hhvZ1627cGcoePrblujJzETfCvXgyRt7vYXc67fzDJKwBOMBqTqOppp5Pv/4jyMizAuw7gK4zqMmzA+hPExjDGL8EhuGAkOI8lhJDqMZIeR8PC/9NDzR15P8Mx98yWavduCr5DrCazQPJh19m1ay6TTHxrW+gQ=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>eth_out</Name>
+			<Path>.</Path>
+			<FullName>./eth_out</FullName>
+			<FullCommandLine>D:\Code\net-lab-2022\build\eth_out.exe "D:/Code/net-lab-2022/testing/data/eth_out"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>4.27797</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Code\net-lab-2022\build\eth_out.exe "D:/Code/net-lab-2022/testing/data/eth_out"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyFlE9PhDAQxa+Er7CXOWpiCMOy/zSaGBPPRvfmqcKwkKWU0K6r394pdA8aaUle0vT3OtCXFxbv6d0yl3vSBrQRg4kX084zUdl0B2i6/mQgxSgalbGWrJy1Yq1ZG9aWtYsiTFnsQ/Yh+5B9yD5kH27c6PhNyL4lN1q0LfSDKkhrKm+gqKk42herk2F8+Zyny3arDlA1LV0VSvZiIDg3poaSpLpOJnMmX9WpKwFvoVNQNlVFA3U8/zfO/Hjpx7kfr/x47ccbP9768c6PMQ3wQG4YCA4DyWEgOgxkh4Hw8L/00PJ7fh7gkftmSzRYtwZbIVMTaCF5oca1bdNYJvm3fX0hetfMYAtfRHEkM19Dx2fjdHw2Tsdn43R8Ns6RJ0kS7/nKg/0BqGq8vhnX0yXPQjOT6pNK0A0fh8YAfRX8d9CTueajtWpLexrTLIePbx6QxD/jOFpI====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>arp_test</Name>
+			<Path>.</Path>
+			<FullName>./arp_test</FullName>
+			<FullCommandLine>D:\Code\net-lab-2022\build\arp_test.exe "D:/Code/net-lab-2022/testing/data/arp_test"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>3.45823</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Code\net-lab-2022\build\arp_test.exe "D:/Code/net-lab-2022/testing/data/arp_test"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyFlE9LxDAQxa+lX2Ev401BStP9ryiI4Fl0b56y7XQbtmlCknX12zvpZkXFpoUH6fwy0/bxmslbfjudyQ1aB1vciS5LJz9K1nHjzpUnxEp0OxCdPjjIWZL0KkhT0ow0Jy1IS9KKtE4SlnOjwaDVFyndUQejDkYdjDrYPAxPX7nULYbhvG1BG1WitVhdQ9lgufePVgdH+PxCj+dyq3ZQixYvSyU1NwhH4RqoUKqr8D2FfFGHrgJ2A52CStQ1Guxo/m9cxPE0jmdxPI/jRRwv43gVx+s4ZvkIH/GNjRjHRpxjI9ax/7xjnt/RdQ8PlBcfAuN3W/ARcA2C5ZIWql/7NPRhkH/To0uuQ7JGU/TMyz264RgFPmhH4IN2BD5oR+CDUQp8MEuBf4cpy7J0Q+4Y/7erunfK9euTH0duiUn1jhVYQZNAOMCPko4Ce9rcUGuj2sp3s7yYwfaTBmTpF2XEW6U=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>ip_test</Name>
+			<Path>.</Path>
+			<FullName>./ip_test</FullName>
+			<FullCommandLine>D:\Code\net-lab-2022\build\ip_test.exe "D:/Code/net-lab-2022/testing/data/ip_test"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>2.38554</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Code\net-lab-2022\build\ip_test.exe "D:/Code/net-lab-2022/testing/data/ip_test"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyFlM1KxDAUhbelr+DmulOQ0nQ6f4qCCK4HnZ2rTHM7DdM0ock4+vbedDILxaaFA2m+nttwOOTqI3+YlWqL1sEO97LL0qvz1iuikN0eZGeODnKWJIMK0oxUkuakBWlJWpHWScJy3hvo0ZrrlN7IwcjByMHIweZhePrOlWkxDOdtC6bXFVqL4g6qBquD/7U+OsKXA71ctlu9h1q2eFNpZXiPcJKuAYFK34bTF+pNHzsB7B46DULWNfbY0fzfuIjjWRyXcTyP40UcL+N4FcfrOGb5BJ/IjU0ExyaSYxPRsf+yY54/0vMEz9QXX4Lef23BV8A1CJYrWuhh7dswlEH9bY+puAnNmmzRhlcHdOM1Cnw0jsBH4wh8NI7AR6sU+GiXAh8t04ZnWZZuKa/eXwC6HrJzw/qc0IlbYkp/ogAryQvSAX5VdDnY88cNWRvdCu9meVHC7psGZOkPB7JbsQ==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>ip_frag_test</Name>
+			<Path>.</Path>
+			<FullName>./ip_frag_test</FullName>
+			<FullCommandLine>D:\Code\net-lab-2022\build\ip_frag_test.exe "D:/Code/net-lab-2022/testing/data/ip_frag_test"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>1.89572</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Code\net-lab-2022\build\ip_frag_test.exe "D:/Code/net-lab-2022/testing/data/ip_frag_test"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>[NON-XML-CHAR-0x1B][0;34mFeeding input.
+[NON-XML-CHAR-0x1B][0;34mComparing logs.
+[NON-XML-CHAR-0x1B][1;32mLog file check passed
+[NON-XML-CHAR-0x1B][0m
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>icmp_test</Name>
+			<Path>.</Path>
+			<FullName>./icmp_test</FullName>
+			<FullCommandLine>D:\Code\net-lab-2022\build\icmp_test.exe "D:/Code/net-lab-2022/testing/data/icmp_test"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>1.3419</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Code\net-lab-2022\build\icmp_test.exe "D:/Code/net-lab-2022/testing/data/icmp_test"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyFlM1KxDAUhbelr+DmulOQ0nQ6f4qCCK4HnZ2rTHM7DdM0ock4+vbedDILxaaFA2m+nttwOOTqI3+YlWqL1sEO97LL0qvz1iuikN0eZGeODnKWJIMK0oxUkuakBWlJWpHWScJy3hvo0ZrrlN7IwcjByMHIweZhePrOlWkxDOdtC6bXFVqL4g6qBquD/7U+OsKXA71ctlu9h1q2eFNpZXiPcJKuAYFK34bTF+pNHzsB7B46DULWNfbY0fzfuIjjWRyXcTyP40UcL+N4FcfrOGb5BJ/IjU0ExyaSYxPRsf+yY54/0vMEz9QXX4Lef23BV8A1CJYrWuhh7dswlEH9bY+puAnNmmzRhlcHdOM1Cnw0jsBH4wh8NI7AR6sU+GiXAh8t04ZnWZZuKa/eXwC6HrJzw/qc0IlbYkp/ogAryQvSAX5VdDnY88cNWRvdCu9meVHC7psGZOkPB7JbsQ==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>May 09 14:50 ?D1[NON-UTF-8-BYTE-0xA8][NON-UTF-8-BYTE-0xB2][NON-UTF-8-BYTE-0xA1][NON-UTF-8-BYTE-0xC0][NON-UTF-8-BYTE-0xA8][NON-UTF-8-BYTE-0xBA][NON-UTF-8-BYTE-0xA1][NON-UTF-8-BYTE-0xC1]?[NON-UTF-8-BYTE-0xA8][NON-UTF-8-BYTE-0xBA][NON-UTF-8-BYTE-0xA1][NON-UTF-8-BYTE-0xC0]??</EndDateTime>
+		<EndTestTime>1652079003</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

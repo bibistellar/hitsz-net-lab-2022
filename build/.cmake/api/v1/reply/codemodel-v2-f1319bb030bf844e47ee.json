@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "net",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "arp_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arp_test-Debug-65e0e77435b340d434da.json",
+					"name" : "arp_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "eth_in::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-eth_in-Debug-09e3afc808828889b395.json",
+					"name" : "eth_in",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "eth_out::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-eth_out-Debug-2f37f3c6d5f4e3953347.json",
+					"name" : "eth_out",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "icmp_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-icmp_test-Debug-f349f0423208415ab590.json",
+					"name" : "icmp_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ip_frag_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ip_frag_test-Debug-d1cdd8e9c4b5f92975bc.json",
+					"name" : "ip_frag_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ip_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ip_test-Debug-89e0d4fefdadbab025fb.json",
+					"name" : "ip_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-Debug-86d418ce1a1382bcee7b.json",
+					"name" : "main",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Code/net-lab-2022/build",
+		"source" : "D:/Code/net-lab-2022"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

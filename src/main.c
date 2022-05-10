@@ -15,6 +15,7 @@ void handler(uint8_t *data, size_t len, uint8_t *src_ip, uint16_t src_port)
 
 int main(int argc, char const *argv[])
 {
+    printf("handler address:%x\n",handler);
 
     if (net_init() == -1) //初始化协议栈
     {

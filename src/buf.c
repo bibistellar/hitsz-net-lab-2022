@@ -110,3 +110,17 @@ void buf_copy(void *pdst, const void *psrc, size_t len)
     buf_init(dst, src->len);
     memcpy(dst->payload, src->payload, BUF_MAX_LEN);
 }
+
+void buf_print(buf_t *buf){
+    for(int i =0;i<buf->len;i++){
+        printf("%x ",buf->data[i]);
+    }
+    printf("\n");
+}
+
+void ip_print(uint8_t *ip){
+    for(int i =0;i<4;i++){
+        printf("%x ",ip[i]);
+    }
+    printf("\n");
+}

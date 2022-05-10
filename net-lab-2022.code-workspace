@@ -1,0 +1,8 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "cmake.generator": "MinGW Makefiles"
+}

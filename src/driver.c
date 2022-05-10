@@ -113,7 +113,7 @@ int driver_open()
     uint32_t mask;
     if (driver_find(net_if_ip, if_name, (uint8_t *)&mask) < 0)
     {
-        fprintf(stderr, "Error in driver find.\n");
+        fprintf(stderr, "Error in driver find.ip:%d,%d,%d,%d\n",net_if_ip[0],net_if_ip[1],net_if_ip[2],net_if_ip[3]);
         return -1;
     }
     printf("Using interface %s, my ip is %s.\n", if_name, iptos(net_if_ip));
